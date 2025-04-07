@@ -172,9 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-/.vs
-/src/mod1/.vs/FlaskWebProject
-/src/mod1/FlaskWebProject/obj/Any CPU/Debug
-/src/mod1/FlaskWebProject/FlaskWebProject.pyproj
-/src/mod1/FlaskWebProject/FlaskWebProject.pyproj.user
-/src/mod1/FlaskWebProject.sln
+
+#custom
+.vs
+obj
+*.pyproj
+*.pyproj.user
+*.sln
