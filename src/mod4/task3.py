@@ -5,6 +5,7 @@ class RegistrationFormTests(unittest.TestCase):
     def setUp(self):
         self.app = task1.app.test_client()
         self.app.testing = True
+        task1.app.config['WTF_CSRF_ENABLED'] = False
 
     def test_valid_email(self):
         response = self.app.post('/registration', data={
